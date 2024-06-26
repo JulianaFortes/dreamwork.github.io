@@ -93,20 +93,14 @@ h2 {
     font-size: 3em; /* Ajuste este valor conforme necessário */
 }
 
-
 /* ABOUT */
 #about {
     background-color: #eaf2eb;
     padding: 80px 40px;
-
 }
-/* ABOUT (fim)*/
-
 
 /* SERVIÇOS */
-
-/* Background color for alternating rows in services section */
-#services{
+#services {
     margin-top: 2%;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -142,7 +136,6 @@ h2 {
 .alinha-texto p {
     margin-top: 1rem; /* Adiciona margem superior ao parágrafo */
 }
-
 
 /* Padding adjustments for images in service text */
 #services .row:nth-child(odd) .col-md-6 img {
@@ -214,13 +207,11 @@ h2 {
     animation: slideInRight 1s ease-out;
 }
 
-/* SERVIÇOS (fim) */
-
-
 /* WHY CHOOSE US */
 #why-choose-us {
     margin-bottom: 3%; /* Aumenta a distância entre o fim da seção e a próxima */
 }
+
 #why-choose-us .feature {
     padding: 20px;
     border: 1px solid #e0e0e0;
@@ -263,7 +254,6 @@ h2 {
 #why-choose-us h2 {
     margin-bottom: 5%; 
 }
-/* WHY CHOOSE US  (fim)*/
 
 /* CONTACT */
 #contact {
@@ -325,9 +315,7 @@ gmp-map {
     padding-top: 10%;
 }
 
-/* CONTACT (fim) */
-
-/* FOOTER  */
+/* FOOTER */
 footer {
     margin-top: 0; /* Remove a margem superior do rodapé */
     background-color: #3d4435; 
@@ -375,4 +363,67 @@ footer .fas {
     }
 }
 
-/* FOOTER (Fim) */
+/* Media Queries para Responsividade */
+@media (max-width: 767.98px) {
+    body {
+        padding: 0 15px;
+    }
+
+    header, nav, footer {
+        text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.2em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    img, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajustes específicos para cada seção */
+
+    /* ABOUT */
+    #about {
+        padding: 20px 15px;
+    }
+
+    /* SERVIÇOS */
+    #services .row:nth-child(odd) .alinha-texto,
+    #services .row:nth-child(even) .alinha-texto {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #services .row:nth-child(odd) .col-md-6 img,
+    #services .row:nth-child(even) .col-md-6 img {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* WHY CHOOSE US */
+    #why-choose-us .feature {
+        margin-bottom: 15px;
+    }
+
+    #why-choose-us .row {
+        flex-direction: column;
+    }
+
+    /* CONTACT */
+    #contact .row > [class*='col-'] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #contact .col-md-7, 
+    #contact .col-md-5 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
