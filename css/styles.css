@@ -96,6 +96,7 @@ h2 {
 #about {
     background-color: #eaf2eb;
     padding: 80px 40px;
+    margin: 0;
 }
 
 /* SERVIÇOS */
@@ -388,9 +389,26 @@ footer .fas {
 
 /* Media Queries para telas menores */
 @media (max-width: 576px) {
+    body{
+        padding: 0%;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
     #home{
         height: 25.2vh;
         
+    }
+
+    #about {
+        padding-top: 15%;
+        text-align: justify;
+        margin-left: 0px !important;
     }
 
     #bg-video {
@@ -406,15 +424,23 @@ footer .fas {
         display: none; /* Oculta a seta de rolagem em ecrãs pequenos */
     }
 
-        /* Ajustes específicos para a seção dos serviços */
-        #services .row {
-            margin: 0 !important; /* Remove margens */
-            padding: 0 !important; /* Remove padding */
-        }
-    
+    /* Ajustes específicos para a seção dos serviços */
+    #services .row {
+        margin: 0 !important; /* Remove margens */
+        padding: 20px;
+    }
 
+    #services .col-md-6.order-md1 .col-md-6.order-md2{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
 
-    #contact .contact-detail {
-        padding-left: 10px; /* Adiciona padding para afastar os ícones das bordas */
+    /* Ajustar os ícones de contato */
+    #contact  {
+        padding: 20px; /* Adiciona padding para afastar os ícones das bordas */
+    }
+
+    #contact  .logo-grande{
+        padding-bottom: 40px; /* Adiciona padding para afastar os ícones das bordas */
     }
 }
