@@ -29,48 +29,45 @@
 <body>
     <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <div class="d-flex align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" alt="Logo" style="height: 40px;">
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contactos</a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contactos</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="home" class="d-flex align-items-center justify-content-center vh-100">
+        <section id="home" >
             <video autoplay muted loop id="bg-video">
                 <source src="video/landscape.mp4" type="video/mp4">
                 O seu navegador não suporta o elemento de vídeo.
             </video>
-            <div class="text-center video-overlay">
-                <!-- Espaço reservado para futuras adições -->
-            </div>
-            <div class="scroll-down">
+            <div class="scroll-down"
                 <a href="#services">
                     <i class="fa-solid fa-arrow-down"></i>
                 </a>
             </div>
         </section>
+        
+        
 
         <section id="about" class="py-5">
             <div class="container">
@@ -333,6 +330,11 @@
             </div>
         </footer>
     </main>
+
     <script src="js/scripts.js"></script>
+    <!-- Incluindo bibliotecas JavaScript necessárias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

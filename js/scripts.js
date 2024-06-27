@@ -18,25 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         lastScrollY = window.scrollY;
     });
 
-    const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        // Validação simples
-        if (name && email && message) {
-            alert('Formulário enviado com sucesso!\n' +
-                  'Nome: ' + name + '\n' +
-                  'Email: ' + email + '\n' +
-                  'Mensagem: ' + message);
-        } else {
-            alert('Por favor, preencha todos os campos.');
-        }
-    });
-
     // Inicializa o EmailJS 
     emailjs.init("lneZ_lS8tpQA0whr2"); 
 
@@ -55,3 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     document.getElementById('contactForm').addEventListener('submit', sendEmail);
 });
+
+
+
+
+
+
