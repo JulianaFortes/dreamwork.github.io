@@ -65,10 +65,20 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(() => {
             const apiKey = window.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+            if (!apiKey) {
+                console.error('Google Maps API key is missing.');
+                return;
+            }
             const script = document.createElement('script');
             script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap&libraries=maps,marker&v=beta`;
             script.async = true;
+            script.onerror = () => {
+                console.error('Error loading Google Maps script.');
+            };
             document.head.appendChild(script);
+        })
+        .catch(error => {
+            console.error('Error fetching env.js:', error);
         });
 
     window.initMap = function() {
