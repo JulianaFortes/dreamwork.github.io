@@ -34,8 +34,9 @@ header.hidden {
 }
 
 .navbar .navbar-collapse {
-    justify-content: center;
+    justify-content: left;
 }
+
 
 main {
     padding-top: 56px; /* Altura da barra de navegação */
@@ -442,5 +443,14 @@ footer .fas {
 
     #contact  .logo-grande{
         padding-bottom: 40px; /* Adiciona padding para afastar os ícones das bordas */
+    }
+
+    .navbar-nav {
+        margin-left: 0; /* Remove o margin-left em telas pequenas para centralizar os itens */
+        text-align: left;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0; /* Remove o margin-right em telas pequenas */
     }
 }

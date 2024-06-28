@@ -6,14 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
     header.classList.add('hidden');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > lastScrollY) {
-            // Rolagem para baixo
-            header.classList.add('visible');
-            header.classList.remove('hidden');
-        } else {
-            // Rolagem para cima
-            header.classList.remove('visible');
+        if (window.scrollY === 0) {
+            // Se estiver no topo da página, esconder a navbar
             header.classList.add('hidden');
+        } else {
+            // Caso contrário, mostrar a navbar
+            header.classList.remove('hidden');
+            header.classList.add('visible');
         }
         lastScrollY = window.scrollY;
     });
@@ -35,10 +34,24 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
     document.getElementById('contactForm').addEventListener('submit', sendEmail);
+
+    // Scroll suave ao clicar na seta
+    document.querySelector('.scroll-down a').addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+    // Recolher a navbar após clicar em um item
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth < 992) { // Verifica se a tela é pequena
+                navCollapse.classList.remove('show');
+            }
+        });
+    });
 });
-
-
-
-
-
 
