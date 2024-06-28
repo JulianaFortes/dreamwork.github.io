@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const targetElement = document.getElementById(targetId);
         targetElement.scrollIntoView({ behavior: 'smooth' });
     });
+
     // Recolher a navbar após clicar em um item
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const navCollapse = document.querySelector('.navbar-collapse');
@@ -53,5 +54,27 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
 
+    // Injetar a chave da API do Google Maps
+    fetch('/env.js')
+        .then(response => response.text())
+        .then(envScript => {
+            const scriptElement = document.createElement('script');
+            scriptElement.innerHTML = envScript;
+            document.head.appendChild(scriptElement);
+        })
+        .then(() => {
+            const apiKey = window.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap&libraries=maps,marker&v=beta`;
+            script.async = true;
+            document.head.appendChild(script);
+        });
+
+    window.initMap = function() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+        });
+    };
+});
