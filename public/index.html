@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E460BXKVHP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E460BXKVHP');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desenvolvimento de websites, e-commerce, marketing e serviços digitais">
+    <meta name="keywords" content="desenvolvimento web, serviços web, Dreamwork.pt, informática, Barcelos, engenharia informática, digital, serviços digitais">
+    <meta name="author" content="dreamwork.pt">
+    <title>Dreamwork.pt</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="d-flex align-items-center justify-content-center">
+            <video autoplay muted loop id="bg-video">
+                <source src="video/landscape.mp4" type="video/mp4">
+                O seu navegador não suporta o elemento de vídeo.
+            </video>
+            <div class="scroll-down">
+                <a href="#about">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </section>
+        
+        
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Sobre Nós</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Somos uma equipa de informáticos apaixonados por tecnologia e inovação. Com uma sólida formação em engenharia informática, estamos comprometidos em oferecer soluções digitais de ponta que ajudam os nossos clientes a alcançar o sucesso online. Embora a nossa empresa seja recente, trazemos conosco anos de experiência e conhecimento na área.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Na Dreamwork.pt, utilizamos as mais recentes tecnologias de Inteligência Artificial para desenvolver websites e soluções digitais que são não apenas funcionais, mas também inteligentes. Acreditamos que a combinação de engenharia informática com IA pode transformar a presença online dos nossos clientes, proporcionando uma experiência de utilizador otimizada e resultados tangíveis.</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <p>Estamos prontos para levar o seu projeto ao próximo nível com inovação, criatividade e tecnologia de última geração. Junte-se a nós e descubra como podemos transformar as suas ideias em realidade!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-5">
+            <div class="">
+                <h2 class="text-center mb-5">Serviços</h2>
+                
+                <!-- Desenvolvimento de Websites -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="img/websites.png" alt="Desenvolvimento de Websites" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="alinha-texto">
+                            <h3 class="text-center">Desenvolvimento de Websites</h3>
+                            <p>Desenvolvemos websites modernos e responsivos que se adaptam a qualquer dispositivo, garantindo uma experiência de utilizador excepcional. Cada site é feito sob medida para atender às necessidades específicas do seu negócio, com foco em funcionalidade, estética e usabilidade.</p>
+                            <div class="text-center">
+                                <a href="#contact" class="btn btn-custom mt-3">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- E-commerce -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 order-md-2">
+                        <img src="img/ecommerce.png" alt="E-commerce" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="alinha-texto">
+                            <h3 class="text-center">E-commerce</h3>
+                            <p>Oferecemos soluções completas para e-commerce, projetando e desenvolvendo lojas virtuais que facilitam a compra e venda de produtos online. Os nossos serviços incluem integração de sistemas de pagamento, gestão de inventário e otimização para motores de busca (SEO).</p>
+                            <div class="text-center">
+                                <a href="#contact" class="btn btn-custom mt-3">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Marketing Digital -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="img/marketing.png" alt="Marketing Digital" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="alinha-texto">
+                            <h3 class="text-center">Marketing Digital</h3>
+                            <p>Implementamos estratégias de marketing digital personalizadas para aumentar a sua presença online e atrair mais clientes. Incluímos gestão de redes sociais, campanhas de publicidade pagas (PPC), marketing de conteúdo e otimização para motores de busca (SEO).</p>
+                            <div class="text-center">
+                                <a href="#contact" class="btn btn-custom mt-3">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Design Gráfico -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 order-md-2">
+                        <img src="img/design.png" alt="Design Gráfico" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="alinha-texto">
+                            <h3 class="text-center">Design Gráfico</h3>
+                            <p>Oferecemos serviços de design gráfico para criar uma identidade visual forte e coesa para a sua marca. Desde logotipos e cartões de visita até banners e materiais promocionais. O nosso design gráfico profissional contribuirá para o destaque da sua marca.</p>
+                            <div class="text-center">
+                                <a href="#contact" class="btn btn-custom mt-3">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Manutenção de Websites -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="img/tools.png" alt="Manutenção de Websites" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="alinha-texto">
+                            <h3 class="text-center">Manutenção de Websites</h3>
+                            <p>Proporcionamos serviços de manutenção de websites para garantir que o seu site esteja sempre atualizado, seguro e funcionando perfeitamente. Cuidamos de tudo, desde atualizações de conteúdo até correções de segurança e otimização de desempenho.</p>
+                            <div class="text-center">
+                                <a href="#contact" class="btn btn-custom mt-3">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Consultoria Digital -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 order-md-2">
+                        <img src="img/consultant.png" alt="Consultoria Digital" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="alinha-texto">
+                            <h3 class="text-center">Consultoria Digital</h3>
+                            <p>Oferecemos serviços de consultoria digital para ajudar a sua empresa a navegar no complexo mundo digital. Desde estratégias de marketing digital até transformação digital completa, estamos aqui para apoiar o crescimento do seu negócio.</p>
+                            <div class="text-center">
+                                <a href="#contact" class="btn btn-custom mt-3">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção Por Que Escolher-Nos -->
+        <section id="why-choose-us" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Por que nos escolher?</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="feature">
+                            <img src="img/innovation.svg" alt="Inovação" class="img-fluid mb-3" style="width: 64px;">
+                            <h4>Inovação</h4>
+                            <p>Utilizamos as mais recentes tecnologias de Inteligência Artificial para criar soluções inovadoras e personalizadas, permitindo-nos assim oferecer serviços mais eficientes e adaptados às necessidades específicas dos nossos clientes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="feature">
+                            <img src="img/security.svg" alt="Segurança" class="img-fluid mb-3" style="width: 64px;">
+                            <h4>Segurança</h4>
+                            <p>Colocamos a segurança dos seus dados em primeiro lugar, implementando as melhores práticas e ferramentas para proteção da informação.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="feature">
+                            <img src="img/support.svg" alt="Suporte Dedicado" class="img-fluid mb-3" style="width: 64px;">
+                            <h4>Suporte Dedicado</h4>
+                            <p>Oferecemos suporte personalizado e dedicado, garantindo que todas as suas necessidades e dúvidas sejam atendidas com rapidez.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 text-center">
+                        <div class="feature">
+                            <img src="img/results.svg" alt="Resultados" class="img-fluid mb-3" style="width: 64px;">
+                            <h4>Resultados</h4>
+                            <p>O nosso foco é gerar resultados concretos e mensuráveis para o seu negócio, ajudando a alcançar os seus objetivos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="feature">
+                            <img src="img/flexibility.svg" alt="Flexibilidade" class="img-fluid mb-3" style="width: 64px;">
+                            <h4>Flexibilidade</h4>
+                            <p>Adaptamos os nossos serviços às suas necessidades específicas, oferecendo soluções flexíveis e personalizadas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="feature">
+                            <img src="img/quality.svg" alt="Qualidade" class="img-fluid mb-3" style="width: 64px;">
+                            <h4>Qualidade</h4>
+                            <p>O nosso compromisso é com a qualidade, entregando projetos de alta performance e excelência em cada detalhe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="">
+            <div class="container">
+                <h2 class="text-center">Contatos</h2>
+                <!-- Primeira linha: Três colunas -->
+                <div class="row align-items-center">
+                    <!-- Primeira coluna: Logo grande -->
+                    <div class="col-md-4 text-center">
+                        <img src="img/logo_grande.png" alt="Logo Grande" class="logo-grande">
+                    </div>
+                    <!-- Segunda coluna: Detalhes de contacto -->
+                    <div class="col-md-4 text-left">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="contact-detail"><i class="fas fa-phone"></i> +351 964 525 603</p>
+                                <p class="contact-detail">(chamada para rede móvel nacional)</p>
+                            </div>
+                            <div class="col-12">
+                                <p class="contact-detail"><i class="fas fa-envelope"></i> geral@dreamwork.pt</p>
+                            </div>
+                            <div class="col-12">
+                                <p class="contact-detail"><i class="fas fa-map-marker-alt"></i> Remelhe, 4755-450 Barcelos, Portugal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Terceira coluna: Formulário de contacto -->
+                    <div class="col-md-4 p-1">
+                        <h3>Fale connosco</h3>
+                        <p>Preencha o formulário abaixo e entraremos em contato.</p>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-custom">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Segunda linha: Google Maps -->
+            </div>
+            <div class="row no-gutters">
+                <div id="map" style="height: 300px; width: 100%;"></div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0 text-left">
+                        <h5>DreamWork</h5>
+                        <p>Desenvolvimento de websites, e-commerce, marketing e serviços digitais</p>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h5>Links Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-white">Home</a></li>
+                            <li><a href="#services" class="text-white">Serviços</a></li>
+                            <li><a href="#about" class="text-white">Sobre Nós</a></li>
+                            <li><a href="#contact" class="text-white">Contactos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Contatos</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-phone"></i> +351 964 525 603</li>
+                            <li><i class="fas fa-envelope"></i> geral@dreamwork.pt</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Remelhe, 4755-450 Barcelos, Portugal</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Dreamwork.pt. Todos os direitos reservados.</p>
+                    </div>heroku --versionnode -v
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/scripts.js"></script>
+    <!-- Incluindo bibliotecas JavaScript necessárias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

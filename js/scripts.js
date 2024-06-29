@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(() => {
             const apiKey = window.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+            console.log('Google Maps API Key:', apiKey); // Verificar a chave na console
             if (!apiKey) {
                 console.error('Google Maps API key is missing.');
                 return;
